@@ -1,0 +1,772 @@
+{
+  "llava": {
+    "cn": {
+      "perception": {
+        "acc": 0.2737,
+        "n": 190
+      },
+      "prediction": {
+        "acc": 0.5484,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.2574,
+        "n": 303
+      },
+      "region": {
+        "acc": 0.6011,
+        "n": 351
+      }
+    },
+    "us": {
+      "perception": {
+        "acc": 0.6142,
+        "n": 197
+      },
+      "prediction": {
+        "acc": 0.5591,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.4574,
+        "n": 188
+      },
+      "region": {
+        "acc": 0.875,
+        "n": 176
+      }
+    },
+    "uk": {
+      "perception": {
+        "acc": 0.2885,
+        "n": 253
+      },
+      "prediction": {
+        "acc": 0.5652,
+        "n": 161
+      },
+      "planning": {
+        "acc": 0.3476,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.7826,
+        "n": 138
+      }
+    },
+    "jp": {
+      "perception": {
+        "acc": 0.0665,
+        "n": 496
+      },
+      "prediction": {
+        "acc": 0.2857,
+        "n": 210
+      },
+      "planning": {
+        "acc": 0.6257,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.403,
+        "n": 134
+      }
+    },
+    "sg": {
+      "perception": {
+        "acc": 0.3871,
+        "n": 186
+      },
+      "prediction": {
+        "acc": 0.6331,
+        "n": 169
+      },
+      "planning": {
+        "acc": 0.5215,
+        "n": 163
+      },
+      "region": {
+        "acc": 0.6504,
+        "n": 246
+      }
+    },
+    "ind": {
+      "perception": {
+        "acc": 0.6293,
+        "n": 205
+      },
+      "prediction": {
+        "acc": 0.5909,
+        "n": 176
+      },
+      "planning": {
+        "acc": 0.5364,
+        "n": 151
+      },
+      "region": {
+        "acc": 0.6635,
+        "n": 208
+      }
+    }
+  },
+  "gemma3": {
+    "cn": {
+      "perception": {
+        "acc": 0.6158,
+        "n": 190
+      },
+      "prediction": {
+        "acc": 0.6237,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.7426,
+        "n": 303
+      },
+      "region": {
+        "acc": 0.7977,
+        "n": 351
+      }
+    },
+    "us": {
+      "perception": {
+        "acc": 0.8376,
+        "n": 197
+      },
+      "prediction": {
+        "acc": 0.6022,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.7606,
+        "n": 188
+      },
+      "region": {
+        "acc": 0.7727,
+        "n": 176
+      }
+    },
+    "uk": {
+      "perception": {
+        "acc": 0.6798,
+        "n": 253
+      },
+      "prediction": {
+        "acc": 0.5528,
+        "n": 161
+      },
+      "planning": {
+        "acc": 0.5241,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.8406,
+        "n": 138
+      }
+    },
+    "jp": {
+      "perception": {
+        "acc": 0.3649,
+        "n": 496
+      },
+      "prediction": {
+        "acc": 0.3333,
+        "n": 210
+      },
+      "planning": {
+        "acc": 0.7005,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.5448,
+        "n": 134
+      }
+    },
+    "sg": {
+      "perception": {
+        "acc": 0.4892,
+        "n": 186
+      },
+      "prediction": {
+        "acc": 0.6272,
+        "n": 169
+      },
+      "planning": {
+        "acc": 0.6074,
+        "n": 163
+      },
+      "region": {
+        "acc": 0.9106,
+        "n": 246
+      }
+    },
+    "ind": {
+      "perception": {
+        "acc": 0.8439,
+        "n": 205
+      },
+      "prediction": {
+        "acc": 0.642,
+        "n": 176
+      },
+      "planning": {
+        "acc": 0.5232,
+        "n": 151
+      },
+      "region": {
+        "acc": 0.9038,
+        "n": 208
+      }
+    }
+  },
+  "internvl3": {
+    "cn": {
+      "perception": {
+        "acc": 0.6789,
+        "n": 190
+      },
+      "prediction": {
+        "acc": 0.7043,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.5413,
+        "n": 303
+      },
+      "region": {
+        "acc": 0.8832,
+        "n": 351
+      }
+    },
+    "us": {
+      "perception": {
+        "acc": 0.9594,
+        "n": 197
+      },
+      "prediction": {
+        "acc": 0.7097,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.7713,
+        "n": 188
+      },
+      "region": {
+        "acc": 1.0,
+        "n": 176
+      }
+    },
+    "uk": {
+      "perception": {
+        "acc": 0.6957,
+        "n": 253
+      },
+      "prediction": {
+        "acc": 0.6522,
+        "n": 161
+      },
+      "planning": {
+        "acc": 0.5936,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.7319,
+        "n": 138
+      }
+    },
+    "jp": {
+      "perception": {
+        "acc": 0.1452,
+        "n": 496
+      },
+      "prediction": {
+        "acc": 0.4619,
+        "n": 210
+      },
+      "planning": {
+        "acc": 0.6684,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.5373,
+        "n": 134
+      }
+    },
+    "sg": {
+      "perception": {
+        "acc": 0.6613,
+        "n": 186
+      },
+      "prediction": {
+        "acc": 0.7574,
+        "n": 169
+      },
+      "planning": {
+        "acc": 0.638,
+        "n": 163
+      },
+      "region": {
+        "acc": 0.8659,
+        "n": 246
+      }
+    },
+    "ind": {
+      "perception": {
+        "acc": 0.8634,
+        "n": 205
+      },
+      "prediction": {
+        "acc": 0.7557,
+        "n": 176
+      },
+      "planning": {
+        "acc": 0.5828,
+        "n": 151
+      },
+      "region": {
+        "acc": 0.7788,
+        "n": 208
+      }
+    }
+  },
+  "internvl35": {
+    "cn": {
+      "perception": {
+        "acc": 0.4316,
+        "n": 190
+      },
+      "prediction": {
+        "acc": 0.543,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.2706,
+        "n": 303
+      },
+      "region": {
+        "acc": 0.5926,
+        "n": 351
+      }
+    },
+    "us": {
+      "perception": {
+        "acc": 0.3249,
+        "n": 197
+      },
+      "prediction": {
+        "acc": 0.4194,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.3989,
+        "n": 188
+      },
+      "region": {
+        "acc": 0.5625,
+        "n": 176
+      }
+    },
+    "uk": {
+      "perception": {
+        "acc": 0.3281,
+        "n": 253
+      },
+      "prediction": {
+        "acc": 0.5901,
+        "n": 161
+      },
+      "planning": {
+        "acc": 0.5134,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.6522,
+        "n": 138
+      }
+    },
+    "jp": {
+      "perception": {
+        "acc": 0.0585,
+        "n": 496
+      },
+      "prediction": {
+        "acc": 0.3048,
+        "n": 210
+      },
+      "planning": {
+        "acc": 0.4813,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.2388,
+        "n": 134
+      }
+    },
+    "sg": {
+      "perception": {
+        "acc": 0.2204,
+        "n": 186
+      },
+      "prediction": {
+        "acc": 0.4556,
+        "n": 169
+      },
+      "planning": {
+        "acc": 0.4785,
+        "n": 163
+      },
+      "region": {
+        "acc": 0.3862,
+        "n": 246
+      }
+    },
+    "ind": {
+      "perception": {
+        "acc": 0.2488,
+        "n": 205
+      },
+      "prediction": {
+        "acc": 0.4091,
+        "n": 176
+      },
+      "planning": {
+        "acc": 0.4503,
+        "n": 151
+      },
+      "region": {
+        "acc": 0.2452,
+        "n": 208
+      }
+    }
+  },
+  "qwen25vl": {
+    "cn": {
+      "perception": {
+        "acc": 0.5895,
+        "n": 190
+      },
+      "prediction": {
+        "acc": 0.5108,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.3663,
+        "n": 303
+      },
+      "region": {
+        "acc": 0.641,
+        "n": 351
+      }
+    },
+    "us": {
+      "perception": {
+        "acc": 0.8528,
+        "n": 197
+      },
+      "prediction": {
+        "acc": 0.5323,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.5266,
+        "n": 188
+      },
+      "region": {
+        "acc": 0.8239,
+        "n": 176
+      }
+    },
+    "uk": {
+      "perception": {
+        "acc": 0.5692,
+        "n": 253
+      },
+      "prediction": {
+        "acc": 0.5155,
+        "n": 161
+      },
+      "planning": {
+        "acc": 0.4813,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.6594,
+        "n": 138
+      }
+    },
+    "jp": {
+      "perception": {
+        "acc": 0.1895,
+        "n": 496
+      },
+      "prediction": {
+        "acc": 0.3667,
+        "n": 210
+      },
+      "planning": {
+        "acc": 0.6738,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.5597,
+        "n": 134
+      }
+    },
+    "sg": {
+      "perception": {
+        "acc": 0.6505,
+        "n": 186
+      },
+      "prediction": {
+        "acc": 0.5266,
+        "n": 169
+      },
+      "planning": {
+        "acc": 0.6074,
+        "n": 163
+      },
+      "region": {
+        "acc": 0.752,
+        "n": 246
+      }
+    },
+    "ind": {
+      "perception": {
+        "acc": 0.8732,
+        "n": 205
+      },
+      "prediction": {
+        "acc": 0.6023,
+        "n": 176
+      },
+      "planning": {
+        "acc": 0.457,
+        "n": 151
+      },
+      "region": {
+        "acc": 0.6827,
+        "n": 208
+      }
+    }
+  },
+  "qwen3vl": {
+    "cn": {
+      "perception": {
+        "acc": 0.4421,
+        "n": 190
+      },
+      "prediction": {
+        "acc": 0.5,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.3267,
+        "n": 303
+      },
+      "region": {
+        "acc": 0.641,
+        "n": 351
+      }
+    },
+    "us": {
+      "perception": {
+        "acc": 0.6091,
+        "n": 197
+      },
+      "prediction": {
+        "acc": 0.4462,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.4574,
+        "n": 188
+      },
+      "region": {
+        "acc": 0.6477,
+        "n": 176
+      }
+    },
+    "uk": {
+      "perception": {
+        "acc": 0.4308,
+        "n": 253
+      },
+      "prediction": {
+        "acc": 0.4658,
+        "n": 161
+      },
+      "planning": {
+        "acc": 0.3476,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.5145,
+        "n": 138
+      }
+    },
+    "jp": {
+      "perception": {
+        "acc": 0.1431,
+        "n": 496
+      },
+      "prediction": {
+        "acc": 0.3619,
+        "n": 210
+      },
+      "planning": {
+        "acc": 0.4064,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.3657,
+        "n": 134
+      }
+    },
+    "sg": {
+      "perception": {
+        "acc": 0.4731,
+        "n": 186
+      },
+      "prediction": {
+        "acc": 0.426,
+        "n": 169
+      },
+      "planning": {
+        "acc": 0.4233,
+        "n": 163
+      },
+      "region": {
+        "acc": 0.5366,
+        "n": 246
+      }
+    },
+    "ind": {
+      "perception": {
+        "acc": 0.6829,
+        "n": 205
+      },
+      "prediction": {
+        "acc": 0.4773,
+        "n": 176
+      },
+      "planning": {
+        "acc": 0.2914,
+        "n": 151
+      },
+      "region": {
+        "acc": 0.5529,
+        "n": 208
+      }
+    }
+  },
+  "llama32": {
+    "cn": {
+      "perception": {
+        "acc": 0.4263,
+        "n": 190
+      },
+      "prediction": {
+        "acc": 0.5914,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.4488,
+        "n": 303
+      },
+      "region": {
+        "acc": 0.6268,
+        "n": 351
+      }
+    },
+    "us": {
+      "perception": {
+        "acc": 0.802,
+        "n": 197
+      },
+      "prediction": {
+        "acc": 0.543,
+        "n": 186
+      },
+      "planning": {
+        "acc": 0.5851,
+        "n": 188
+      },
+      "region": {
+        "acc": 0.8182,
+        "n": 176
+      }
+    },
+    "uk": {
+      "perception": {
+        "acc": 0.4743,
+        "n": 253
+      },
+      "prediction": {
+        "acc": 0.5901,
+        "n": 161
+      },
+      "planning": {
+        "acc": 0.4866,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.7101,
+        "n": 138
+      }
+    },
+    "jp": {
+      "perception": {
+        "acc": 0.0706,
+        "n": 496
+      },
+      "prediction": {
+        "acc": 0.3048,
+        "n": 210
+      },
+      "planning": {
+        "acc": 0.5615,
+        "n": 187
+      },
+      "region": {
+        "acc": 0.5,
+        "n": 134
+      }
+    },
+    "sg": {
+      "perception": {
+        "acc": 0.5699,
+        "n": 186
+      },
+      "prediction": {
+        "acc": 0.5325,
+        "n": 169
+      },
+      "planning": {
+        "acc": 0.4908,
+        "n": 163
+      },
+      "region": {
+        "acc": 0.7358,
+        "n": 246
+      }
+    },
+    "ind": {
+      "perception": {
+        "acc": 0.7171,
+        "n": 205
+      },
+      "prediction": {
+        "acc": 0.5511,
+        "n": 176
+      },
+      "planning": {
+        "acc": 0.6026,
+        "n": 151
+      },
+      "region": {
+        "acc": 0.6587,
+        "n": 208
+      }
+    }
+  }
+}

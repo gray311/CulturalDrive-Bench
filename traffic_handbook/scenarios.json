@@ -1,0 +1,483 @@
+[
+  {
+    "scenario_id": 1,
+    "title": "Turn-on-Red / Signal Exception",
+    "keyword": "a car. a traffic light. a pedestrian. a crosswalk.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Signalized intersection, vehicle wants to turn left (left-side driving).",
+        "traffic_rule_tag": "No Turn on Red (default)",
+        "expected_motion_action": "Must stop and wait for green/arrow.",
+        "detailed_description": "Default prohibition. Only permitted with explicit signal/arrow."
+      },
+      "US": {
+        "specific_scenario": "Signalized intersection, vehicle wants to turn right at red.",
+        "traffic_rule_tag": "Right Turn on Red (conditional)",
+        "expected_motion_action": "Full stop → yield to pedestrians & cross traffic → turn if clear.",
+        "detailed_description": "Legal in many states unless sign prohibits. Complete stop required."
+      },
+      "CN": {
+        "specific_scenario": "Signalized intersection, vehicle wants to turn right at red.",
+        "traffic_rule_tag": "Right Turn on Red (often allowed, city-dependent)",
+        "expected_motion_action": "Slow/stop → yield to pedestrians & bikes → turn if safe.",
+        "detailed_description": "Common practice allows right-turn at red, but strong pedestrian/bike conflict risk."
+      },
+      "JP": {
+        "specific_scenario": "Signalized intersection, vehicle wants to turn left (left-side driving).",
+        "traffic_rule_tag": "No Turn on Red (default)",
+        "expected_motion_action": "Must stop and wait for green/arrow.",
+        "detailed_description": "Similar to UK; default prohibition."
+      },
+      "SG": {
+        "specific_scenario": "Signalized intersection, vehicle wants to turn left (left-side driving).",
+        "traffic_rule_tag": "No Turn on Red (strict)",
+        "expected_motion_action": "Must stop and wait for green arrow.",
+        "detailed_description": "Highly regulated; strong enforcement, typically prohibited unless explicit."
+      }
+    }
+  },
+  {
+    "scenario_id": 2,
+    "title": "Unsignalized Pedestrian Crossing",
+    "keyword": "a car. a pedestrian. a crosswalk. a bicycle. a traffic light.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Vehicle approaches zebra crossing without traffic light; pedestrian waiting.",
+        "traffic_rule_tag": "Strong pedestrian priority",
+        "expected_motion_action": "Slow early → stop before zebra → allow crossing.",
+        "detailed_description": "Drivers expected to anticipate crossing even before step-in."
+      },
+      "US": {
+        "specific_scenario": "Same scenario.",
+        "traffic_rule_tag": "Pedestrian priority (varies by state enforcement)",
+        "expected_motion_action": "Yield if pedestrian intends to cross; stop if entering crosswalk.",
+        "detailed_description": "Legal obligation exists but behavioral variation across cities."
+      },
+      "CN": {
+        "specific_scenario": "Same scenario with pedestrian + e-bike approaching.",
+        "traffic_rule_tag": "Pedestrian priority (mixed compliance)",
+        "expected_motion_action": "Yield; anticipate late crossing behavior.",
+        "detailed_description": "Mixed vehicle–nonmotorized interaction increases uncertainty."
+      },
+      "JP": {
+        "specific_scenario": "Same scenario on narrow urban street.",
+        "traffic_rule_tag": "Strong pedestrian priority",
+        "expected_motion_action": "Slow significantly → stop completely.",
+        "detailed_description": "High social compliance; cautious driving norm."
+      },
+      "SG": {
+        "specific_scenario": "Same scenario near school zone.",
+        "traffic_rule_tag": "Strict pedestrian priority",
+        "expected_motion_action": "Stop fully; high compliance expectation.",
+        "detailed_description": "Strict enforcement, especially near schools."
+      }
+    }
+  },
+  {
+    "scenario_id": 3,
+    "title": "Bus Lane / Time-Dependent Lane",
+    "keyword": "a car. a bus. a bus lane marking. a road sign. a traffic light. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Urban road with bus lane active 7–10 AM.",
+        "traffic_rule_tag": "Time-dependent bus lane",
+        "expected_motion_action": "Avoid bus lane during active hours.",
+        "detailed_description": "Lane becomes restricted during specified hours; sign-based."
+      },
+      "US": {
+        "specific_scenario": "Urban road with bus-only lane.",
+        "traffic_rule_tag": "Bus-only lane (city-specific)",
+        "expected_motion_action": "Avoid unless permitted; merge carefully.",
+        "detailed_description": "Rules vary by city; signage critical."
+      },
+      "CN": {
+        "specific_scenario": "Urban road with bus lane + electric bikes nearby.",
+        "traffic_rule_tag": "Bus-only lane (often peak-hour)",
+        "expected_motion_action": "Avoid; manage bike conflicts.",
+        "detailed_description": "Complex interaction with bikes and taxis."
+      },
+      "JP": {
+        "specific_scenario": "Urban arterial with designated bus lane.",
+        "traffic_rule_tag": "Bus priority lane",
+        "expected_motion_action": "Avoid bus lane; merge safely.",
+        "detailed_description": "Clear marking; disciplined traffic."
+      },
+      "SG": {
+        "specific_scenario": "Bus lane active during peak hours.",
+        "traffic_rule_tag": "Strict time-dependent bus lane",
+        "expected_motion_action": "Strictly avoid during active hours; heavy enforcement.",
+        "detailed_description": "Strong enforcement; automated fines common."
+      }
+    }
+  },
+  {
+    "scenario_id": 4,
+    "title": "Roundabout Entry Priority",
+    "keyword": "a car. a roundabout. a yield sign. a lane marking. a traffic light. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Multi-lane roundabout, vehicle entering, circulating traffic present.",
+        "traffic_rule_tag": "Roundabout priority (circulating has priority)",
+        "expected_motion_action": "Yield at give-way line; enter only with safe gap; keep lane discipline.",
+        "detailed_description": "Roundabouts common; strong norm: give way to right (circulating)."
+      },
+      "US": {
+        "specific_scenario": "Small modern roundabout, mixed driver behavior.",
+        "traffic_rule_tag": "Roundabout priority (often, but less consistent)",
+        "expected_motion_action": "Yield; be conservative to account for inconsistent behaviors.",
+        "detailed_description": "Less frequent; drivers vary → planner must be robust."
+      },
+      "CN": {
+        "specific_scenario": "Roundabout with scooters merging at entry.",
+        "traffic_rule_tag": "Roundabout + mixed traffic",
+        "expected_motion_action": "Yield; anticipate scooters cutting-in; slow down early.",
+        "detailed_description": "Mixed flow increases uncertainty."
+      },
+      "JP": {
+        "specific_scenario": "Single-lane roundabout near residential area.",
+        "traffic_rule_tag": "Roundabout priority",
+        "expected_motion_action": "Yield; cautious entry.",
+        "detailed_description": "Less common but rules clear."
+      },
+      "SG": {
+        "specific_scenario": "Urban roundabout with clear yield markings.",
+        "traffic_rule_tag": "Strict roundabout yield",
+        "expected_motion_action": "Yield strictly; follow lane arrows.",
+        "detailed_description": "Strong signage and compliance."
+      }
+    }
+  },
+  {
+    "scenario_id": 5,
+    "title": "Permissive Turn vs Protected Arrow",
+    "keyword": "a car. a traffic light. a left turn arrow. an oncoming car. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Right turn (left-side driving) with green circular, oncoming straight traffic present.",
+        "traffic_rule_tag": "Unprotected crossing turn",
+        "expected_motion_action": "Proceed only if clear; yield to oncoming.",
+        "detailed_description": "Mirror of US permissive left due to left-side driving."
+      },
+      "US": {
+        "specific_scenario": "Left turn with green circular, oncoming straight traffic present.",
+        "traffic_rule_tag": "Permissive left (yield to oncoming)",
+        "expected_motion_action": "Yield to oncoming + pedestrians; take gap only when safe.",
+        "detailed_description": "Classic failure case for imitation-only planners."
+      },
+      "CN": {
+        "specific_scenario": "Left turn with green circular + bikes crossing.",
+        "traffic_rule_tag": "Permissive left + vulnerable users",
+        "expected_motion_action": "Yield to oncoming + bikes; often wait longer.",
+        "detailed_description": "Bike interaction makes rule compliance nontrivial."
+      },
+      "JP": {
+        "specific_scenario": "Right turn (left-side) with green circular + oncoming traffic.",
+        "traffic_rule_tag": "Unprotected crossing turn",
+        "expected_motion_action": "Yield; conservative gap acceptance.",
+        "detailed_description": "Conservative culture."
+      },
+      "SG": {
+        "specific_scenario": "Right turn (left-side) with green circular at busy junction.",
+        "traffic_rule_tag": "Strict yield on permissive",
+        "expected_motion_action": "Yield strictly; prefer waiting for arrow phase if present.",
+        "detailed_description": "High enforcement; risk-averse behavior expected."
+      }
+    }
+  },
+  {
+    "scenario_id": 6,
+    "title": "Box Junction / Keep Clear",
+    "keyword": "a car. a yellow box junction. a traffic light. a crosswalk. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Approaching box junction; downstream lane congested.",
+        "traffic_rule_tag": "Box junction rule",
+        "expected_motion_action": "Do not enter unless exit is clear; wait before the box.",
+        "detailed_description": "Very strong legality rule in UK."
+      },
+      "US": {
+        "specific_scenario": "“Keep clear” marking near intersection.",
+        "traffic_rule_tag": "Keep intersection clear",
+        "expected_motion_action": "Avoid blocking intersection.",
+        "detailed_description": "Not as standardized; still illegal to block."
+      },
+      "CN": {
+        "specific_scenario": "Intersection with yellow grid marking; congestion.",
+        "traffic_rule_tag": "Keep-clear marking",
+        "expected_motion_action": "Do not enter if you’ll stop inside.",
+        "detailed_description": "Common in dense cities."
+      },
+      "JP": {
+        "specific_scenario": "Intersection with keep-clear marking near rail crossing.",
+        "traffic_rule_tag": "Keep-clear rule",
+        "expected_motion_action": "Wait; avoid blocking junction.",
+        "detailed_description": "Often near rail/tram."
+      },
+      "SG": {
+        "specific_scenario": "Junction with keep-clear box; camera enforcement.",
+        "traffic_rule_tag": "Strict keep-clear",
+        "expected_motion_action": "Wait strictly until exit is clear.",
+        "detailed_description": "Strong enforcement."
+      }
+    }
+  },
+  {
+    "scenario_id": 7,
+    "title": "School Zone Time Window",
+    "keyword": "a car. a zone sign. a children. a pedestrian. a traffic light. a school.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Flashing sign indicates school time; kids near curb.",
+        "traffic_rule_tag": "School zone speed rule",
+        "expected_motion_action": "Reduce speed; prepare to stop.",
+        "detailed_description": "Cautious behavior expected."
+      },
+      "US": {
+        "specific_scenario": "School zone sign with flashing lights.",
+        "traffic_rule_tag": "Time-dependent speed limit",
+        "expected_motion_action": "Obey reduced speed.",
+        "detailed_description": "Clear “when flashing” trigger."
+      },
+      "CN": {
+        "specific_scenario": "School gate area with pickup traffic.",
+        "traffic_rule_tag": "School zone caution",
+        "expected_motion_action": "Slow substantially.",
+        "detailed_description": "High interaction complexity."
+      },
+      "JP": {
+        "specific_scenario": "School street with narrow lane + children.",
+        "traffic_rule_tag": "School zone caution",
+        "expected_motion_action": "Slow and be ready to stop.",
+        "detailed_description": "High caution norm."
+      },
+      "SG": {
+        "specific_scenario": "School zone with crossing guard.",
+        "traffic_rule_tag": "Strict school-zone enforcement",
+        "expected_motion_action": "Slow + strict yielding.",
+        "detailed_description": "Strong enforcement."
+      }
+    }
+  },
+  {
+    "scenario_id": 8,
+    "title": "Work Zone / Temporary Lane Shift",
+    "keyword": "a car. a traffic cone. a construction sign. a lane arrow. a traffic light. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Cones shift lane left; temporary speed limit.",
+        "traffic_rule_tag": "Temporary traffic control",
+        "expected_motion_action": "Follow cones/arrows; reduce speed.",
+        "detailed_description": "Temporary rules override default markings."
+      },
+      "US": {
+        "specific_scenario": "Work zone with flagger; lane reduced.",
+        "traffic_rule_tag": "Work-zone compliance",
+        "expected_motion_action": "Obey flagger; reduce speed; merge early.",
+        "detailed_description": "Flaggers add human instruction."
+      },
+      "CN": {
+        "specific_scenario": "Cones + old lane markings visible.",
+        "traffic_rule_tag": "Conflicting markings",
+        "expected_motion_action": "Prioritize temporary markings.",
+        "detailed_description": "Conflicting cues challenge perception."
+      },
+      "JP": {
+        "specific_scenario": "Narrow work zone with detour.",
+        "traffic_rule_tag": "Work-zone detour",
+        "expected_motion_action": "Follow detour.",
+        "detailed_description": "Polite yielding culture."
+      },
+      "SG": {
+        "specific_scenario": "Structured work zone with clear arrows.",
+        "traffic_rule_tag": "Strict work-zone rules",
+        "expected_motion_action": "Follow temporary guidance.",
+        "detailed_description": "Strong compliance."
+      }
+    }
+  },
+  {
+    "scenario_id": 9,
+    "title": "Emergency Vehicle Approaching",
+    "keyword": "a car. an ambulance. a police car. flashing lights. a traffic light. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Ambulance behind with siren.",
+        "traffic_rule_tag": "Emergency right-of-way",
+        "expected_motion_action": "Pull left if safe.",
+        "detailed_description": "Orderly yielding expected."
+      },
+      "US": {
+        "specific_scenario": "Police car behind; intersection ahead.",
+        "traffic_rule_tag": "Emergency pull-over",
+        "expected_motion_action": "Pull over to right.",
+        "detailed_description": "Do not block intersection."
+      },
+      "CN": {
+        "specific_scenario": "Ambulance approaching; scooters nearby.",
+        "traffic_rule_tag": "Emergency + mixed traffic",
+        "expected_motion_action": "Create corridor.",
+        "detailed_description": "Mixed traffic increases hazard."
+      },
+      "JP": {
+        "specific_scenario": "Fire truck behind on narrow street.",
+        "traffic_rule_tag": "Emergency narrow road",
+        "expected_motion_action": "Stop/edge carefully.",
+        "detailed_description": "Narrow streets require nuance."
+      },
+      "SG": {
+        "specific_scenario": "Ambulance behind; bus lane present.",
+        "traffic_rule_tag": "Emergency compliance",
+        "expected_motion_action": "Make space quickly.",
+        "detailed_description": "Disciplined behavior."
+      }
+    }
+  },
+  {
+    "scenario_id": 10,
+    "title": "Bus Stop Re-entry Priority",
+    "keyword": "a car. a bus. a bus stop. a turn signal. a traffic light. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Bus signaling to pull out from stop.",
+        "traffic_rule_tag": "Bus priority etiquette",
+        "expected_motion_action": "Yield to bus.",
+        "detailed_description": "Drivers expected to accommodate buses."
+      },
+      "US": {
+        "specific_scenario": "Bus leaving stop; no special sign.",
+        "traffic_rule_tag": "Bus merge courtesy",
+        "expected_motion_action": "Cautious yield.",
+        "detailed_description": "Less consistent behavior."
+      },
+      "CN": {
+        "specific_scenario": "Bus pulls out; bikes filtering.",
+        "traffic_rule_tag": "Bus + bike conflict",
+        "expected_motion_action": "Slow and yield.",
+        "detailed_description": "Bike conflict common."
+      },
+      "JP": {
+        "specific_scenario": "Bus re-enters traffic on arterial.",
+        "traffic_rule_tag": "Bus merge etiquette",
+        "expected_motion_action": "Yield smoothly.",
+        "detailed_description": "Predictable yielding."
+      },
+      "SG": {
+        "specific_scenario": "Bus leaving stop with priority markings.",
+        "traffic_rule_tag": "Strong bus priority",
+        "expected_motion_action": "Yield.",
+        "detailed_description": "High compliance."
+      }
+    }
+  },
+  {
+    "scenario_id": 11,
+    "title": "One-way + Contraflow Bike/Bus Lane",
+    "keyword": "a car. a bicycle. a one-way sign. a bike lane. a traffic light. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "One-way street with contraflow bike lane.",
+        "traffic_rule_tag": "Contraflow exception",
+        "expected_motion_action": "Follow one-way; avoid bike lane.",
+        "detailed_description": "Signage important."
+      },
+      "US": {
+        "specific_scenario": "Downtown one-way street.",
+        "traffic_rule_tag": "One-way compliance",
+        "expected_motion_action": "Follow direction.",
+        "detailed_description": "Simple but common."
+      },
+      "CN": {
+        "specific_scenario": "One-way with ambiguous signage.",
+        "traffic_rule_tag": "One-way ambiguity",
+        "expected_motion_action": "Slow and confirm direction.",
+        "detailed_description": "Mixed traffic complexity."
+      },
+      "JP": {
+        "specific_scenario": "Narrow residential one-way.",
+        "traffic_rule_tag": "One-way narrow street",
+        "expected_motion_action": "Follow direction slowly.",
+        "detailed_description": "Narrow geometry interactions."
+      },
+      "SG": {
+        "specific_scenario": "One-way with explicit lane segregation.",
+        "traffic_rule_tag": "Strict signage",
+        "expected_motion_action": "Follow signage strictly.",
+        "detailed_description": "Clear segregation."
+      }
+    }
+  },
+  {
+    "scenario_id": 12,
+    "title": "U-turn / Median Opening",
+    "keyword": "a car. a median. a U-turn sign. an oncoming car. a traffic light. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Signalized intersection with U-turn signage.",
+        "traffic_rule_tag": "U-turn restrictions",
+        "expected_motion_action": "Only U-turn if allowed.",
+        "detailed_description": "Conservative approach."
+      },
+      "US": {
+        "specific_scenario": "Median opening with U-turn permitted.",
+        "traffic_rule_tag": "U-turn permitted by sign",
+        "expected_motion_action": "U-turn if safe.",
+        "detailed_description": "Sign grounding critical."
+      },
+      "CN": {
+        "specific_scenario": "Wide intersection with scooters crossing.",
+        "traffic_rule_tag": "Mixed compliance",
+        "expected_motion_action": "Prefer not unless clearly allowed.",
+        "detailed_description": "High conflict scenario."
+      },
+      "JP": {
+        "specific_scenario": "Narrow U-turn slot.",
+        "traffic_rule_tag": "Conservative U-turn",
+        "expected_motion_action": "Avoid unless designed.",
+        "detailed_description": "Cautious driving culture."
+      },
+      "SG": {
+        "specific_scenario": "Dedicated U-turn pocket.",
+        "traffic_rule_tag": "Strict U-turn pocket",
+        "expected_motion_action": "Use designated pocket.",
+        "detailed_description": "Strong structure."
+      }
+    }
+  },
+  {
+    "scenario_id": 13,
+    "title": "HOV / Occupancy-dependent Lane",
+    "keyword": "a car. a HOV lane marking. a road sign. a highway lane. a traffic light. a pedestrian.",
+    "countries": {
+      "UK": {
+        "specific_scenario": "Express lane with time restriction.",
+        "traffic_rule_tag": "Time-dependent lane access",
+        "expected_motion_action": "Enter only if permitted.",
+        "detailed_description": "Sign-based control."
+      },
+      "US": {
+        "specific_scenario": "HOV lane requires 2+ occupants.",
+        "traffic_rule_tag": "HOV lane occupancy rule",
+        "expected_motion_action": "Use lane only if occupancy satisfied.",
+        "detailed_description": "Explicit dynamic rule."
+      },
+      "CN": {
+        "specific_scenario": "Lane restricted by vehicle class/time.",
+        "traffic_rule_tag": "Vehicle-class restriction",
+        "expected_motion_action": "Follow restriction.",
+        "detailed_description": "City policy variation."
+      },
+      "JP": {
+        "specific_scenario": "Lane restricted by vehicle type/time.",
+        "traffic_rule_tag": "Vehicle restriction lane",
+        "expected_motion_action": "Follow restriction conservatively.",
+        "detailed_description": "General restriction modeling."
+      },
+      "SG": {
+        "specific_scenario": "Lane restricted by time/vehicle type.",
+        "traffic_rule_tag": "Strict lane restriction",
+        "expected_motion_action": "Follow restriction strictly.",
+        "detailed_description": "Strong enforcement."
+      }
+    }
+  }
+]

@@ -1,0 +1,70 @@
+# -------- Python --------
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# -------- IDE / tooling --------
+.vscode/
+.idea/
+.claude/
+.gradio/
+.ipynb_checkpoints/
+.DS_Store
+
+# -------- Large / derived artifacts --------
+eval/logs/
+eval/archive/
+eval/plots/*.pdf           # keep PNG, host PDF via Release
+eval/__pycache__/
+
+# Model result JSONs — publish as GitHub Release instead
+eval/results/*_results.json
+eval/results/*_part_*.json
+
+# Top-level transient outputs
+debug_boxes/
+results/
+score_details.json
+scores.json
+
+# -------- Old/legacy benchmark snapshots --------
+culturebenchmark.json
+culturebenchmark_shuffled.json
+culturebenchmark_train.json
+culturebenchmark_eval_1200.json
+filtered_region_qa.json
+region_qa_15_per_country_refined.json
+
+# -------- Third-party vendored datasets / submodules --------
+dataset/DEIMv2/
+dataset/LingoQA/
+dataset/videos/
+dataset/predictions.json
+dataset/test.json
+
+# -------- Traffic handbook heavy assets (keep .py only) --------
+# Large scenario & filter JSONs are inference intermediates, not core data.
+traffic_handbook/*.pdf
+traffic_handbook/CultureDrive/
+traffic_handbook/*_scenario.json
+traffic_handbook/filtered_*.json
+# Keep scenarios.json (24 KB, the canonical scenario list)
+
+# dataset/ contains a 117 MB /videos dir and a vendored DEIMv2 detector
+dataset/videos/
+dataset/DEIMv2/
+dataset/engine/
+dataset/=1.6.7
+dataset/predictions.json
+
+# -------- Secrets --------
+gpt_test.py
+*.env
+.aws/

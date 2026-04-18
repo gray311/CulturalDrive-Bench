@@ -1,0 +1,86 @@
+{
+  "3200": {
+    "label": "invalid",
+    "comment": "yellow with  black characters",
+    "country": "cn",
+    "category": "perception"
+  },
+  "4943": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  },
+  "3180": {
+    "label": "invalid",
+    "comment": "Yellow background with black characters",
+    "country": "cn",
+    "category": "perception"
+  },
+  "4899": {
+    "label": "invalid",
+    "comment": "green，New energy",
+    "country": "cn",
+    "category": "perception"
+  },
+  "5003": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  },
+  "4200": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  },
+  "3220": {
+    "label": "invalid",
+    "comment": "Yellow background with black characters",
+    "country": "cn",
+    "category": "perception"
+  },
+  "2860": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  },
+  "3888": {
+    "label": "invalid",
+    "comment": "green background with black characters，new energy",
+    "country": "cn",
+    "category": "perception"
+  },
+  "4574": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  },
+  "3980": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  },
+  "2736": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  },
+  "3120": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  },
+  "3596": {
+    "label": "valid",
+    "comment": "",
+    "country": "cn",
+    "category": "perception"
+  }
+}
